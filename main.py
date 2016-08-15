@@ -34,5 +34,5 @@ for row in main_array:
     translate_category = get_category.findall(row)[0]
     translate_value = get_value.findall(row)[0]
     file = open(translate_category + '.php', 'a')
-    file.write(translate_value + ' => ,\n')
+    file.write(translate_value + ' => \'\',\n')
     file.close()
